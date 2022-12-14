@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car Price Prediction</title>
+</head>
+
+<body style="background-color: rgba(0, 117, 123, 0.632);">
+
+    <h1> Car Price Prediction </h1>
+    <form method="POST" action="/car_price">
+
+        <label>year:</label>
+        <input type = "text" name = "year">
+        </select>
+
+        <br>
+        <br>
+
+        <label>mileage:</label>
+        <input type = "text" name = "mileage">
+        </select>
+
+        <br>
+        <br>
+
+        <label>hp:</label>
+        <input type = "text" name = "hp">
+        </select>
+
+        <br>
+        <br>
+        
+        <label>gear:</label>
+        <label>automatic:</label> <input type = "radio" name= "gear" value = "automatic">
+        <label>manual:</label> <input type = "radio" name= "gear" value = "manual">
+
+        <br>
+        <br>
+        
+        <label>fuel:</label>
+        <select name = "fuel">
+            <option value = "gasoline">gasoline</option>
+            <option value = "diesel">diesel</option>
+            <option value = "Hybrid - gasoline">Hybrid_gasoline</option>
+            <option value = "electric">electric</option>
+            <option value = "hybrid - diesel">hybrid_diesel</option>
+            <option value = "gas">gas</option>
+            <option value = "other">other</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>make:</label>
+        <select name = "make">
+            <option value = "Volkswagen">Volkswagen</option>
+            <option value = "Audi">Audi</option>
+            <option value = "Mercedes-Benz">Mercedes-Benz</option>
+            <option value = "Skoda">Skoda</option>
+            <option value = "BMW">BMW</option>
+            <option value = "Ford">Ford</option>
+            <option value = "Opel">Opel</option>
+            <option value = "Renault">Renault</option>
+            <option value = "Seat">Seat</option>
+            <option value = "Hyundai">Hyundai</option>
+            <option value = "CUPRA">CUPRA</option>
+            <option value = "Volvo">Volvo</option>
+            <option value = "Kia">Kia</option>
+            <option value = "Nissan">Nissan</option>
+            <option value = "Toyota">Toyota</option>
+            <option value = "Peugeot">Peugeot</option>
+            <option value = "Dacia">Dacia</option>
+            <option value = "Mazda">Mazda</option>
+            <option value = "Citroën">Citroën</option>
+            <option value = "MINI">MINI</option>
+            <option value = "Porsche">Porsche</option>
+            <option value = "Fiat">Fiat</option>
+            <option value = "Land">Land</option>
+            <option value = "Jaguar">Jaguar</option>
+            <option value = "Jeep">Jeep</option>
+            <option value = "Suzuki">Suzuki</option>
+            <option value = "Mitsubishi">Mitsubishi</option>
+            <option value = "smart">smart</option>
+            <option value = "Honda">Honda</option>
+            <option value = "Alfa">Alfa</option>
+            <option value = "DS">DS</option>
+            <option value = "Abarth">Abarth</option>
+            <option value = "Subaru">Subaru</option>
+            <option value = "Ssangyong">Ssangyong</option>
+            <option value = "Maserati">Maserati</option>
+            <option value = "Lexus">Lexus</option>
+            <option value = "Dodge">Dodge</option>
+            <option value = "MG">MG</option>
+            <option value = "Aston">Aston</option>
+            <option value = "Tesla">Tesla</option>
+            <option value = "Piaggio">Piaggio</option>
+            <option value = "ALPINA">ALPINA</option>
+            <option value = "Bentley">Bentley</option>
+            <option value = "Cadillac">Cadillac</option>
+            <option value = "Polestar">Polestar</option>
+            <option value = "Infiniti">Infiniti</option>
+            <option value = "Lada">Lada</option>
+        </select>
+           
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <p> Your desired car Price is <b> {{ prediction }} /- Rs.</b> Only </p>
+
+
+    </form>
+
+
+</body>
+</html>
